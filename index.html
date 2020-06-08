@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="error-container">
+
+    </div>
+    <div class="form-group">
+      <div class="loan-group">
+      <h1 class="head">Loan Calculator</h1>
+      <div class="card-group">
+        <form action="" id="form-group">
+          <span class="text-group">$</span>
+          <input type="text" id="amount" class="input-group" placeholder="Loan Amount">
+        </form>
+        <form action="" id="form-group">
+          <span class="text-group">%</span>
+          <input type="text" id="interest" class="input-group" placeholder="Interest">
+        </form>
+        <form action="" id="form-group">
+          <input type="text" id="years" class="years-input" placeholder="Years To Repay">
+          <input type="submit" class="btn" value="Calculate">
+        </form>
+      </div>
+      </div>
+      <!--LOADER HERE-->
+      
+      <div id="loader">
+        <img src="./img/loading.gif" alt="">
+      </div>
+   
+      <!--Results-->
+      <div class="card-result">
+      <h2 class="head">Results</h2>
+      <div class="loan-form">
+        <form action="" id="result-group">
+          <input type="text" id="monthly-payment" class="input-result" placeholder="Monthly-Payment" disabled>
+        </form>
+        <form action="" id="result-group">
+          <input type="text" id="total-payment" class="input-result" placeholder="Total Payment" disabled>
+        </form>
+        <form action="" id="result-group">
+          <input type="text" id="total-interest" class="input-result" placeholder="Total Interest" disabled>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
